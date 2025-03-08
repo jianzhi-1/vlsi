@@ -6,18 +6,18 @@
 // ...
 .ends
 
-* global voltage variables
+// global voltage variables
 vvdd vdd 0 1.8
 vgnd vss 0 0
 vin a 0 0 PULSE(0 1.8 0 10p 10p 2n 4n)
 
-* components
+// components
 xsub a vss vdd y sub
 
-* capacitors and resistors
+// capacitors and resistors
 C0 y vss 5E-16
 
-* simulate
+// simulate
 .tran 10p 4n
 .ic y 1.8
 // initial configurations
